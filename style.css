@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #F5F4F2;
+    font-family: 'Bangers', cursive;
+}
+#title{
+    text-align: center;
+    color: #b845ee;
+    width: 40%;
+    height: 80px;
+    margin: 2rem auto auto auto;
+}
+#game{
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 3rem auto auto auto;
+    overflow: hidden;
+    background-color: rgb(90, 181, 241);
+
+}
+
+#block{
+    width: 50px;
+    height: 500px;
+    background-color: green;
+    position: relative;
+    left: 400px;
+    animation: block 2s infinite linear;
+}
+
+@keyframes block{
+    0%{left:400px}
+    100%{left: 0px;}
+}
+
+#hole{
+    width: 50px;
+    height: 150px;
+    background-color: rgb(90, 181, 241);
+    position: relative;
+    left: 400px;
+    top: -300px;
+    animation: block 2s infinite linear;
+}
+
+#character{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 145, 0);
+    position: absolute;
+    /* top: 157px; */
+    top: 280px;
+    left: 400px;
+    border-radius: 50%;
+}
